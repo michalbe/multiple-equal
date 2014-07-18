@@ -117,3 +117,12 @@ result = mequal(
   {a:1, b:2, c:3}, {a:1, b:2, c:3}, {a:1, b:2, c:3}, {a:1, b:2, c:3}
 );
 assert(!result);
+
+
+// Similar object, different order of the attributes
+result = mequal(
+  {a:1, b:2, c:3},
+  {b:2, a:1, c:3},
+  {c:3, a:1, b:2}
+);
+assert(result);
