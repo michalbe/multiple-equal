@@ -15,7 +15,7 @@ var deepEqual = function( x, y ) {
   return true;
 }
 
-module.exports = function(){
+var multipleEqual = function(){
   var args = Array.prototype.slice.call(arguments);
   return args.slice(1).every(
     function(element) {
@@ -23,3 +23,5 @@ module.exports = function(){
     }
   );
 }
+
+module.exports = multipleEqual;
