@@ -1,0 +1,10 @@
+{
+  "name": "multiple-equal",
+  "version": "1.0.0",
+  "author": "Michal Budzynski<michal@virtualdesign.pl>",
+  "repository": "https://github.com/michalbe/multipla-equal",
+  "scripts": {
+    "test": "node tests/multiple-equal-tests.js",
+    "lint": "node node_modules/jshint/bin/jshint ."
+  }
+}
