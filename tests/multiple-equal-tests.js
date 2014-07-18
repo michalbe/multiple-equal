@@ -57,15 +57,21 @@ assert(!result);
 
 // Mooaar
 // should pass
-result = mequal('yo', 'yo', 'yo', 'yo', 'yo', 'yo', 'yo', 'yo', 'yo', 'yo', 'yo', 'yo');
+result = mequal(
+  'yo', 'yo', 'yo', 'yo', 'yo', 'yo', 'yo', 'yo', 'yo', 'yo', 'yo', 'yo'
+);
 assert(result);
 
 // should fails
-result = mequal('yo', 'yo', 'yo', 'yo', 'yo', 'yo', 'yo', 'yo', 'yo', 'yo', 'yo', 'elo');
+result = mequal(
+  'yo', 'yo', 'yo', 'yo', 'yo', 'yo', 'yo', 'yo', 'yo', 'yo', 'yo', 'elo'
+);
 assert(!result);
 
 // should fails
-result = mequal('elo', 'yo', 'yo', 'yo', 'yo', 'yo', 'yo', 'yo', 'yo', 'yo', 'yo', 'yo');
+result = mequal(
+  'elo', 'yo', 'yo', 'yo', 'yo', 'yo', 'yo', 'yo', 'yo', 'yo', 'yo', 'yo'
+);
 assert(!result);
 
 // Objects
